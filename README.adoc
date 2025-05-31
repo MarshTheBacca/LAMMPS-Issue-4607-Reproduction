@@ -1,12 +1,24 @@
 # LAMMPS Issue 4607 Reproduction
 
-This repository contains a containerised example to reproduce the issue lammps/lammps#4607.
+This repository is a containerised example to reproduce lammps/lammps#4607
 
 It consists of a Ubuntu Plucky container configured to build LAMMPS (with some add-ons) exactly as it was first reported.
 
+Output for the build process is provided in `log.txt`.
+
 ## Versions
-Ubuntu Plucky
-CMake 3.31.6
-Clang++ 20.1.2
-C++ standard 23
-LAMMPS release patch_2Apr2025
+
+* Ubuntu Plucky
+* CMake 3.31.6
+* Clang++ 20.1.2
+* C++ standard 23
+* LAMMPS release patch_2Apr2025
+
+## Running The Example
+
+You will need to install the https://docs.docker.com/engine/install/[Docker Engine] on your system. Once you have Docker installed, you can run the following commands to build and run the container:
+
+```
+docker build -t lammps-issue-4607 .
+docker run lammps-issue-4607
+```
