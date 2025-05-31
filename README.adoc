@@ -1,0 +1,12 @@
+# LAMMPS Issue 4607 Reproduction
+
+This repository contains a containerised example to reproduce the issue lammps/lammps#4607.
+
+It consists of a Ubuntu Plucky container configured to build LAMMPS (with some add-ons) exactly as it was first reported.
+
+## Versions
+Ubuntu Plucky
+CMake 3.31.6
+Clang++ 20.1.2
+C++ standard 23
+LAMMPS release patch_2Apr2025

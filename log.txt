@@ -1,0 +1,874 @@
+-- The CXX compiler identification is Clang 20.1.2
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Deprecation Warning at build/_deps/lammps-src/cmake/CMakeLists.txt:21 (cmake_policy):
+  The OLD behavior for policy CMP0109 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Found Git: /usr/bin/git (found version "2.48.1")
+-- Running check for auto-generated files from make-based build system
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so (found version "3.1")
+-- Found MPI: TRUE (found version "3.1")
+-- Found OpenMP_CXX: -fopenmp=libomp (found version "5.1")
+-- Found OpenMP: TRUE (found version "5.1") found components: CXX
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80")
+-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.47")
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3.1")
+-- Found GZIP: /usr/bin/gzip
+-- Found FFMPEG: /usr/bin/ffmpeg
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1")
+-- Checking for module 'fftw3'
+--   Found fftw3, version 3.3.10
+-- Found FFTW3: /usr/lib/x86_64-linux-gnu/libfftw3.so
+-- Looking for C++ include cmath
+-- Looking for C++ include cmath - found
+-- Generating style headers...
+-- Generating package headers...
+-- Generating lmpinstalledpkgs.h...
+-- Found Python: /usr/bin/python3 (found version "3.13.3") found components: Interpreter
+-- Found Python3: /usr/bin/python3 (found version "3.13.3") found components: Interpreter
+-- The following tools and libraries have been found and configured:
+ * Git
+ * MPI
+ * OpenMP
+ * JPEG
+ * PNG
+ * ZLIB
+ * PkgConfig
+ * FFTW3
+ * Python
+ * Python3
+
+-- <<< Build configuration >>>
+   LAMMPS Version:   20250402 patch_2Apr2025
+   Operating System: Linux Ubuntu" 25.04
+   CMake Version:    3.31.6
+   Build type:       RelWithDebInfo
+   Install path:     /root/.local
+   Generator:        Ninja using /usr/bin/ninja
+-- Enabled packages: EXTRA-MOLECULE;KSPACE;MANYBODY;MOLECULE;RIGID
+-- <<< Compilers and Flags: >>>
+-- C++ Compiler:     /usr/bin/clang++
+      Type:          Clang
+      Version:       20.1.2
+      C++ Standard:  23
+      C++ Flags:     -O2 -g -DNDEBUG
+      Defines:       LAMMPS_SMALLBIG;LAMMPS_MEMALIGN=64;LAMMPS_OMP_COMPAT=4;LAMMPS_JPEG;LAMMPS_PNG;LAMMPS_GZIP;LAMMPS_FFMPEG;FFT_FFTW3;FFT_FFTW_THREADS
+-- <<< Linker flags: >>>
+-- Executable name:  lmp
+-- Shared library flags:    
+-- <<< MPI flags >>>
+-- MPI_defines:      MPICH_SKIP_MPICXX;OMPI_SKIP_MPICXX;_MPICC_H
+-- MPI includes:     /usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-- MPI libraries:    /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so;
+-- <<< FFT settings >>>
+-- Primary FFT lib:  FFTW3
+-- Using double precision FFTs
+-- Using threaded FFTs
+-- Using builtin distributed FFT algorithms
+-- Configuring done (73.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /app/build
+[0/2] Re-checking globbed directories...
+[1/562] Generating includes/lammps/bond.h
+[2/562] Generating includes/lammps/comm.h
+[3/562] Generating includes/lammps/dihedral.h
+[4/562] Generating includes/lammps/angle.h
+[5/562] Generating includes/lammps/citeme.h
+[6/562] Generating includes/lammps/command.h
+[7/562] Generating includes/lammps/compute.h
+[8/562] Generating includes/lammps/domain.h
+[9/562] Generating includes/lammps/error.h
+[10/562] Generating includes/lammps/exceptions.h
+[11/562] Generating includes/lammps/atom.h
+[12/562] Generating includes/lammps/fix.h
+[13/562] Generating includes/lammps/group.h
+[14/562] Generating includes/lammps/force.h
+[15/562] Generating includes/lammps/input.h
+[16/562] Generating includes/lammps/improper.h
+[17/562] Generating includes/lammps/info.h
+[18/562] Generating includes/lammps/lammps.h
+[19/562] Generating includes/lammps/lmppython.h
+[20/562] Generating includes/lammps/kspace.h
+[21/562] Generating includes/lammps/lattice.h
+[22/562] Generating includes/lammps/library.h
+[23/562] Generating includes/lammps/lmptype.h
+[24/562] Generating includes/lammps/memory.h
+[25/562] Generating includes/lammps/modify.h
+[26/562] Generating includes/lammps/pointers.h
+[27/562] Generating includes/lammps/neighbor.h
+[28/562] Generating includes/lammps/output.h
+[29/562] Generating includes/lammps/pair.h
+[30/562] Generating includes/lammps/platform.h
+[31/562] Generating includes/lammps/region.h
+[32/562] Generating includes/lammps/neigh_list.h
+[33/562] Generating includes/lammps/timer.h
+[34/562] Generating includes/lammps/universe.h
+[35/562] Generating includes/lammps/update.h
+[36/562] Generating includes/lammps/utils.h
+[37/562] Generating includes/lammps/fmt/core.h
+[38/562] Generating includes/lammps/fmt/format.h
+[39/562] Generating includes/lammps/variable.h
+[40/562] cd /app/build/_deps/lammps-build && /usr/bin/cmake -DLAMMPS_DIR="/app/build/_deps/lammps-src" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/app/build/_deps/lammps-build/styles" -P /app/build/_deps/lammps-src/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /app/build/_deps/lammps-src/.git
+-- Generating lmpgitversion.h...
+[41/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/arg_info.cpp.o
+[42/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_map.cpp.o
+[43/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/angle_zero.cpp.o
+[44/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/angle_deprecated.cpp.o
+[45/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_atomic.cpp.o
+[46/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/angle.cpp.o
+[47/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_body.cpp.o
+[48/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/angle_hybrid.cpp.o
+[49/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_charge.cpp.o
+[50/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/angle_write.cpp.o
+[51/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_line.cpp.o
+[52/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_ellipsoid.cpp.o
+[53/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_hybrid.cpp.o
+[54/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/body.cpp.o
+[55/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/bond_deprecated.cpp.o
+[56/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec.cpp.o
+[57/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_tri.cpp.o
+[58/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/bond_zero.cpp.o
+[59/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/bond.cpp.o
+[60/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/bond_hybrid.cpp.o
+[61/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom_vec_sphere.cpp.o
+[62/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/balance.cpp.o
+[63/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/citeme.cpp.o
+[64/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/change_box.cpp.o
+[65/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/atom.cpp.o
+[66/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/comm_brick.cpp.o
+[67/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_aggregate_atom.cpp.o
+[68/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/comm_tiled.cpp.o
+[69/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute.cpp.o
+[70/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_angmom_chunk.cpp.o
+[71/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/comm.cpp.o
+[72/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_angle.cpp.o
+[73/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_bond.cpp.o
+[74/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_chunk.cpp.o
+[75/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_angle_local.cpp.o
+[76/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_centroid_stress_atom.cpp.o
+[77/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_bond_local.cpp.o
+[78/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_centro_atom.cpp.o
+[79/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_chunk_spread_atom.cpp.o
+[80/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_com_chunk.cpp.o
+[81/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_count_type.cpp.o
+[82/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_com.cpp.o
+[83/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_coord_atom.cpp.o
+[84/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_deprecated.cpp.o
+[85/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_cna_atom.cpp.o
+[86/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_dihedral.cpp.o
+[87/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_cluster_atom.cpp.o
+[88/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_chunk_atom.cpp.o
+[89/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_dihedral_local.cpp.o
+[90/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_dipole.cpp.o
+[91/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_dipole_chunk.cpp.o
+[92/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_displace_atom.cpp.o
+[93/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_erotate_sphere.cpp.o
+[94/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_heat_flux.cpp.o
+[95/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_gyration_chunk.cpp.o
+[96/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_fragment_atom.cpp.o
+[97/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_gyration.cpp.o
+[98/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_improper.cpp.o
+[99/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_erotate_sphere_atom.cpp.o
+[100/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_global_atom.cpp.o
+[101/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_group_group.cpp.o
+[102/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_ke_atom.cpp.o
+[103/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_inertia_chunk.cpp.o
+[104/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_ke.cpp.o
+[105/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_improper_local.cpp.o
+[106/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_msd.cpp.o
+[107/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_msd_chunk.cpp.o
+[108/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_omega_chunk.cpp.o
+[109/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_pair_local.cpp.o
+[110/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_pair.cpp.o
+[111/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_orientorder_atom.cpp.o
+[112/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_pe.cpp.o
+[113/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_pe_atom.cpp.o
+[114/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_pressure.cpp.o
+[115/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_rdf.cpp.o
+[116/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_property_chunk.cpp.o
+[117/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_property_local.cpp.o
+[118/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_reduce_region.cpp.o
+[119/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_property_grid.cpp.o
+[120/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_stress_atom.cpp.o
+[121/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_reduce.cpp.o
+[122/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_reduce_chunk.cpp.o
+[123/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp.cpp.o
+[124/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_property_atom.cpp.o
+[125/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_chunk.cpp.o
+[126/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_slice.cpp.o
+[127/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_com.cpp.o
+[128/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_deform.cpp.o
+[129/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_ramp.cpp.o
+[130/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_profile.cpp.o
+[131/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_partial.cpp.o
+[132/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_torque_chunk.cpp.o
+[133/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_vacf.cpp.o
+[134/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_sphere.cpp.o
+[135/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_vcm_chunk.cpp.o
+[136/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_temp_region.cpp.o
+[137/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/compute_vacf_chunk.cpp.o
+[138/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/create_bonds.cpp.o
+[139/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/create_box.cpp.o
+[140/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/deprecated.cpp.o
+[141/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dihedral.cpp.o
+[142/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/delete_bonds.cpp.o
+[143/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dihedral_deprecated.cpp.o
+[144/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/delete_atoms.cpp.o
+[145/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/create_atoms.cpp.o
+[146/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dihedral_zero.cpp.o
+[147/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dihedral_write.cpp.o
+[148/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/displace_atoms.cpp.o
+[149/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dihedral_hybrid.cpp.o
+[150/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_grid_vtk.cpp.o
+[151/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_atom.cpp.o
+[152/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump.cpp.o
+[153/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_cfg.cpp.o
+[154/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_deprecated.cpp.o
+[155/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/domain.cpp.o
+[156/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_grid.cpp.o
+[157/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_movie.cpp.o
+[158/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_xyz.cpp.o
+[159/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_local.cpp.o
+[160/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/error.cpp.o
+[161/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix.cpp.o
+[162/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/finish.cpp.o
+[163/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_custom.cpp.o
+[164/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/dump_image.cpp.o
+[165/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_ave_atom.cpp.o
+[166/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_addforce.cpp.o
+[167/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_ave_histo_weight.cpp.o
+[168/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_ave_chunk.cpp.o
+[169/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_ave_correlate.cpp.o
+[170/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_aveforce.cpp.o
+[171/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_adapt.cpp.o
+[172/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_ave_grid.cpp.o
+[173/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_ave_histo.cpp.o
+[174/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_ave_time.cpp.o
+[175/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_balance.cpp.o
+[176/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_bond_history.cpp.o
+[177/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_deprecated.cpp.o
+[178/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_dt_reset.cpp.o
+[179/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_dummy.cpp.o
+[180/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_deposit.cpp.o
+[181/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_box_relax.cpp.o
+[182/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_evaporate.cpp.o
+[183/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_enforce2d.cpp.o
+[184/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_gravity.cpp.o
+[185/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_efield.cpp.o
+[186/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_external.cpp.o
+[187/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_deform.cpp.o
+[188/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_group.cpp.o
+[189/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_halt.cpp.o
+[190/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_heat.cpp.o
+[191/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_indent.cpp.o
+[192/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_lineforce.cpp.o
+[193/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_minimize.cpp.o
+[194/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_momentum.cpp.o
+[195/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nh_sphere.cpp.o
+[196/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_neigh_history.cpp.o
+[197/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nph.cpp.o
+[198/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_move.cpp.o
+[199/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_npt.cpp.o
+[200/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_npt_sphere.cpp.o
+[201/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nph_sphere.cpp.o
+[202/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nve_noforce.cpp.o
+[203/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_langevin.cpp.o
+[204/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nve_limit.cpp.o
+[205/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nve.cpp.o
+[206/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nvt.cpp.o
+[207/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nh.cpp.o
+[208/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nve_sphere.cpp.o
+[209/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nvt_sphere.cpp.o
+[210/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_nvt_sllod.cpp.o
+[211/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_planeforce.cpp.o
+[212/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_pair.cpp.o
+[213/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_print.cpp.o
+[214/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_press_berendsen.cpp.o
+[215/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_recenter.cpp.o
+[216/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_respa.cpp.o
+[217/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_property_atom.cpp.o
+[218/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_setforce.cpp.o
+[219/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_press_langevin.cpp.o
+[220/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_spring.cpp.o
+[221/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_read_restart.cpp.o
+[222/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_spring_chunk.cpp.o
+[223/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_restrain.cpp.o
+[224/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_store_atom.cpp.o
+[225/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_store_force.cpp.o
+[226/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_spring_self.cpp.o
+[227/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_store_global.cpp.o
+[228/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_store_local.cpp.o
+[229/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_viscous.cpp.o
+[230/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_temp_rescale.cpp.o
+[231/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_vector.cpp.o
+[232/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_harmonic.cpp.o
+[233/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_temp_berendsen.cpp.o
+[234/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_thermal_conductivity.cpp.o
+[235/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_lj126.cpp.o
+[236/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_store_state.cpp.o
+[237/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_lj1043.cpp.o
+[238/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_lj93.cpp.o
+[239/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/hashlittle.cpp.o
+[240/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall.cpp.o
+[241/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_morse.cpp.o
+[242/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_reflect.cpp.o
+[243/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_region.cpp.o
+[244/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_format.cpp.o
+FAILED: _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_format.cpp.o 
+/usr/bin/clang++ -DFFT_FFTW3 -DFFT_FFTW_THREADS -DLAMMPS_FFMPEG -DLAMMPS_GZIP -DLAMMPS_JPEG -DLAMMPS_MEMALIGN=64 -DLAMMPS_OMP_COMPAT=4 -DLAMMPS_PNG -DLAMMPS_SMALLBIG -DMPICH_SKIP_MPICXX -DOMPI_SKIP_MPICXX -D_MPICC_H -Dlammps_EXPORTS -I/app/build/_deps/lammps-src/src -I/app/build/_deps/lammps-src/src/EXTRA-MOLECULE -I/app/build/_deps/lammps-src/src/KSPACE -I/app/build/_deps/lammps-src/src/MANYBODY -I/app/build/_deps/lammps-src/src/MOLECULE -I/app/build/_deps/lammps-src/src/RIGID -I/app/build/_deps/lammps-build/styles -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -O2 -g -DNDEBUG -std=c++23 -fPIC -fopenmp=libomp -MD -MT _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_format.cpp.o -MF _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_format.cpp.o.d -o _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_format.cpp.o -c /app/build/_deps/lammps-src/src/fmtlib_format.cpp
+In file included from /app/build/_deps/lammps-src/src/fmtlib_format.cpp:9:
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:57:24: error: call to consteval function 'fmt::basic_format_string<char, fmt::basic_string_view<char> &, const char (&)[3]>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+   57 |     fmt::format_to(it, FMT_STRING("{}{}"), message, SEP);
+      |                        ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"{}{}"[1])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2671:5: note: in call to 'this->on_format_specs(0, &"{}{}"[1], &"{}{}"[1])'
+ 2671 |     on_format_specs(id, begin, begin);  // Call parse() on empty specs.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2495:5: note: in call to 'handler.on_replacement_field(0, &"{}{}"[1])'
+ 2495 |     handler.on_replacement_field(handler.on_arg_id(), begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2527:21: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, fmt::basic_string_view<char>, char[3]> &>(&"{}{}"[1], &"{}{}"[4], checker(s))'
+ 2527 |         begin = p = parse_replacement_field(p - 1, end, handler);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, fmt::basic_string_view<char>, char[3]>>({&"{}{}"[0], 4}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:57:24: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("{}{}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("{}{}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+   57 |     fmt::format_to(it, FMT_STRING("{}{}"), message, SEP);
+      |                        ^~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1892 |     /* Use the hidden visibility as a workaround for a GCC bug (#1973). */    \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1893 |     /* Use a macro-like name to avoid shadowing warnings. */                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1894 |     struct FMT_VISIBILITY("hidden") FMT_COMPILE_STRING : base {               \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1895 |       using char_type FMT_MAYBE_UNUSED = fmt::remove_cvref_t<decltype(s[0])>; \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1896 |       FMT_MAYBE_UNUSED FMT_CONSTEXPR explicit                                 \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1897 |       operator fmt::basic_string_view<char_type>() const {                    \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1898 |         return fmt::detail_exported::compile_string_to_view<char_type>(s);    \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1899 |       }                                                                       \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1900 |     };                                                                        \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1901 |     return FMT_COMPILE_STRING();                                              \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1902 |   }()
+      |   ~~~
+In file included from /app/build/_deps/lammps-src/src/fmtlib_format.cpp:9:
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:58:22: error: call to consteval function 'fmt::basic_format_string<char, const char (&)[7], int &>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+   58 |   fmt::format_to(it, FMT_STRING("{}{}"), ERROR_STR, error_code);
+      |                      ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"{}{}"[1])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2671:5: note: in call to 'this->on_format_specs(0, &"{}{}"[1], &"{}{}"[1])'
+ 2671 |     on_format_specs(id, begin, begin);  // Call parse() on empty specs.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2495:5: note: in call to 'handler.on_replacement_field(0, &"{}{}"[1])'
+ 2495 |     handler.on_replacement_field(handler.on_arg_id(), begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2527:21: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, char[7], int> &>(&"{}{}"[1], &"{}{}"[4], checker(s))'
+ 2527 |         begin = p = parse_replacement_field(p - 1, end, handler);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, char[7], int>>({&"{}{}"[0], 4}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:58:22: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("{}{}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("{}{}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+   58 |   fmt::format_to(it, FMT_STRING("{}{}"), ERROR_STR, error_code);
+      |                      ^~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1892 |     /* Use the hidden visibility as a workaround for a GCC bug (#1973). */    \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1893 |     /* Use a macro-like name to avoid shadowing warnings. */                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1894 |     struct FMT_VISIBILITY("hidden") FMT_COMPILE_STRING : base {               \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1895 |       using char_type FMT_MAYBE_UNUSED = fmt::remove_cvref_t<decltype(s[0])>; \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1896 |       FMT_MAYBE_UNUSED FMT_CONSTEXPR explicit                                 \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1897 |       operator fmt::basic_string_view<char_type>() const {                    \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1898 |         return fmt::detail_exported::compile_string_to_view<char_type>(s);    \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1899 |       }                                                                       \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1900 |     };                                                                        \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1901 |     return FMT_COMPILE_STRING();                                              \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1902 |   }()
+      |   ~~~
+In file included from /app/build/_deps/lammps-src/src/fmtlib_format.cpp:9:
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:1382:35: error: call to consteval function 'fmt::basic_format_string<char, unsigned int &>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+ 1382 |         out = fmt::format_to(out, FMT_STRING("{:x}"), value);
+      |                                   ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"{:x}"[2])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2505:15: note: in call to 'handler.on_format_specs(0, &"{:x}"[2], &"{:x}"[4])'
+ 2505 |       begin = handler.on_format_specs(adapter.arg_id, begin + 1, end);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2527:21: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, unsigned int> &>(&"{:x}"[1], &"{:x}"[4], checker(s))'
+ 2527 |         begin = p = parse_replacement_field(p - 1, end, handler);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, unsigned int>>({&"{:x}"[0], 4}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:1382:35: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("{:x}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("{:x}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+ 1382 |         out = fmt::format_to(out, FMT_STRING("{:x}"), value);
+      |                                   ^~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1892 |     /* Use the hidden visibility as a workaround for a GCC bug (#1973). */    \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1893 |     /* Use a macro-like name to avoid shadowing warnings. */                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1894 |     struct FMT_VISIBILITY("hidden") FMT_COMPILE_STRING : base {               \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1895 |       using char_type FMT_MAYBE_UNUSED = fmt::remove_cvref_t<decltype(s[0])>; \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1896 |       FMT_MAYBE_UNUSED FMT_CONSTEXPR explicit                                 \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1897 |       operator fmt::basic_string_view<char_type>() const {                    \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1898 |         return fmt::detail_exported::compile_string_to_view<char_type>(s);    \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1899 |       }                                                                       \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1900 |     };                                                                        \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1901 |     return FMT_COMPILE_STRING();                                              \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1902 |   }()
+      |   ~~~
+In file included from /app/build/_deps/lammps-src/src/fmtlib_format.cpp:9:
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:1386:33: error: call to consteval function 'fmt::basic_format_string<char, unsigned int &>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+ 1386 |       out = fmt::format_to(out, FMT_STRING("{:08x}"), value);
+      |                                 ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"{:08x}"[2])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2505:15: note: in call to 'handler.on_format_specs(0, &"{:08x}"[2], &"{:08x}"[6])'
+ 2505 |       begin = handler.on_format_specs(adapter.arg_id, begin + 1, end);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2527:21: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, unsigned int> &>(&"{:08x}"[1], &"{:08x}"[6], checker(s))'
+ 2527 |         begin = p = parse_replacement_field(p - 1, end, handler);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, unsigned int>>({&"{:08x}"[0], 6}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:1386:33: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("{:08x}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("{:08x}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+ 1386 |       out = fmt::format_to(out, FMT_STRING("{:08x}"), value);
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1892 |     /* Use the hidden visibility as a workaround for a GCC bug (#1973). */    \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1893 |     /* Use a macro-like name to avoid shadowing warnings. */                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1894 |     struct FMT_VISIBILITY("hidden") FMT_COMPILE_STRING : base {               \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1895 |       using char_type FMT_MAYBE_UNUSED = fmt::remove_cvref_t<decltype(s[0])>; \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1896 |       FMT_MAYBE_UNUSED FMT_CONSTEXPR explicit                                 \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1897 |       operator fmt::basic_string_view<char_type>() const {                    \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1898 |         return fmt::detail_exported::compile_string_to_view<char_type>(s);    \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1899 |       }                                                                       \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1900 |     };                                                                        \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1901 |     return FMT_COMPILE_STRING();                                              \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1902 |   }()
+      |   ~~~
+In file included from /app/build/_deps/lammps-src/src/fmtlib_format.cpp:9:
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:1389:33: error: call to consteval function 'fmt::basic_format_string<char, int>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+ 1389 |       out = fmt::format_to(out, FMT_STRING("p{}"),
+      |                                 ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"p{}"[2])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2671:5: note: in call to 'this->on_format_specs(0, &"p{}"[2], &"p{}"[2])'
+ 2671 |     on_format_specs(id, begin, begin);  // Call parse() on empty specs.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2495:5: note: in call to 'handler.on_replacement_field(0, &"p{}"[2])'
+ 2495 |     handler.on_replacement_field(handler.on_arg_id(), begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2527:21: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, int> &>(&"p{}"[2], &"p{}"[3], checker(s))'
+ 2527 |         begin = p = parse_replacement_field(p - 1, end, handler);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, int>>({&"p{}"[0], 3}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format-inl.h:1389:33: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("p{}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("p{}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+ 1389 |       out = fmt::format_to(out, FMT_STRING("p{}"),
+      |                                 ^~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1892 |     /* Use the hidden visibility as a workaround for a GCC bug (#1973). */    \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1893 |     /* Use a macro-like name to avoid shadowing warnings. */                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1894 |     struct FMT_VISIBILITY("hidden") FMT_COMPILE_STRING : base {               \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1895 |       using char_type FMT_MAYBE_UNUSED = fmt::remove_cvref_t<decltype(s[0])>; \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1896 |       FMT_MAYBE_UNUSED FMT_CONSTEXPR explicit                                 \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1897 |       operator fmt::basic_string_view<char_type>() const {                    \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1898 |         return fmt::detail_exported::compile_string_to_view<char_type>(s);    \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1899 |       }                                                                       \
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1900 |     };                                                                        \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1901 |     return FMT_COMPILE_STRING();                                              \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1902 |   }()
+      |   ~~~
+5 errors generated.
+[245/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fix_wall_table.cpp.o
+[246/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_os.cpp.o
+FAILED: _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_os.cpp.o 
+/usr/bin/clang++ -DFFT_FFTW3 -DFFT_FFTW_THREADS -DLAMMPS_FFMPEG -DLAMMPS_GZIP -DLAMMPS_JPEG -DLAMMPS_MEMALIGN=64 -DLAMMPS_OMP_COMPAT=4 -DLAMMPS_PNG -DLAMMPS_SMALLBIG -DMPICH_SKIP_MPICXX -DOMPI_SKIP_MPICXX -D_MPICC_H -Dlammps_EXPORTS -I/app/build/_deps/lammps-src/src -I/app/build/_deps/lammps-src/src/EXTRA-MOLECULE -I/app/build/_deps/lammps-src/src/KSPACE -I/app/build/_deps/lammps-src/src/MANYBODY -I/app/build/_deps/lammps-src/src/MOLECULE -I/app/build/_deps/lammps-src/src/RIGID -I/app/build/_deps/lammps-build/styles -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -O2 -g -DNDEBUG -std=c++23 -fPIC -fopenmp=libomp -MD -MT _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_os.cpp.o -MF _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_os.cpp.o.d -o _deps/lammps-build/CMakeFiles/lammps.dir/__/src/fmtlib_os.cpp.o -c /app/build/_deps/lammps-src/src/fmtlib_os.cpp
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:173:35: error: call to consteval function 'fmt::basic_format_string<char, const char *>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+  173 |     FMT_THROW(system_error(errno, FMT_STRING("cannot open file {}"),
+      |                                   ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"cannot open file {}"[18])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2671:5: note: in call to 'this->on_format_specs(0, &"cannot open file {}"[18], &"cannot open file {}"[18])'
+ 2671 |     on_format_specs(id, begin, begin);  // Call parse() on empty specs.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2495:5: note: in call to 'handler.on_replacement_field(0, &"cannot open file {}"[18])'
+ 2495 |     handler.on_replacement_field(handler.on_arg_id(), begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2527:21: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, const char *> &>(&"cannot open file {}"[18], &"cannot open file {}"[19], checker(s))'
+ 2527 |         begin = p = parse_replacement_field(p - 1, end, handler);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, const char *>>({&"cannot open file {}"[0], 19}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:173:35: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("cannot open file {}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("cannot open file {}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+  173 |     FMT_THROW(system_error(errno, FMT_STRING("cannot open file {}"),
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  174 |                            filename.c_str()));
+      |                            ~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/format.h:127:34: note: expanded from macro 'FMT_THROW'
+  127 | #      define FMT_THROW(x) throw x
+      |                                  ^
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:217:29: error: call to consteval function 'fmt::basic_format_string<char, const char *>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+  217 |         system_error(errno, FMT_STRING("cannot open file {}"), path.c_str()));
+      |                             ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"cannot open file {}"[18])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2671:5: note: in call to 'this->on_format_specs(0, &"cannot open file {}"[18], &"cannot open file {}"[18])'
+ 2671 |     on_format_specs(id, begin, begin);  // Call parse() on empty specs.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2495:5: note: in call to 'handler.on_replacement_field(0, &"cannot open file {}"[18])'
+ 2495 |     handler.on_replacement_field(handler.on_arg_id(), begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2527:21: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, const char *> &>(&"cannot open file {}"[18], &"cannot open file {}"[19], checker(s))'
+ 2527 |         begin = p = parse_replacement_field(p - 1, end, handler);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, const char *>>({&"cannot open file {}"[0], 19}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:217:29: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("cannot open file {}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("cannot open file {}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+  216 |     FMT_THROW(
+      |     ~~~~~~~~~~
+  217 |         system_error(errno, FMT_STRING("cannot open file {}"), path.c_str()));
+      |         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/format.h:127:34: note: expanded from macro 'FMT_THROW'
+  127 | #      define FMT_THROW(x) throw x
+      |                                  ^
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:286:16: error: call to consteval function 'fmt::basic_format_string<char, int &>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+  286 |         errno, FMT_STRING("cannot duplicate file descriptor {}"), fd));
+      |                ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"cannot duplicate file descriptor {}"[34])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2671:5: note: in call to 'this->on_format_specs(0, &"cannot duplicate file descriptor {}"[34], &"cannot duplicate file descriptor {}"[34])'
+ 2671 |     on_format_specs(id, begin, begin);  // Call parse() on empty specs.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2495:5: note: in call to 'handler.on_replacement_field(0, &"cannot duplicate file descriptor {}"[34])'
+ 2495 |     handler.on_replacement_field(handler.on_arg_id(), begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2561:13: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, int> &>(&"cannot duplicate file descriptor {}"[34], &"cannot duplicate file descriptor {}"[35], checker(s))'
+ 2561 |     begin = parse_replacement_field(p, end, handler);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, int>>({&"cannot duplicate file descriptor {}"[0], 35}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:286:16: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("cannot duplicate file descriptor {}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("cannot duplicate file descriptor {}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+  285 |     FMT_THROW(system_error(
+      |     ~~~~~~~~~~~~~~~~~~~~~~~
+  286 |         errno, FMT_STRING("cannot duplicate file descriptor {}"), fd));
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/format.h:127:34: note: expanded from macro 'FMT_THROW'
+  127 | #      define FMT_THROW(x) throw x
+      |                                  ^
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:295:16: error: call to consteval function 'fmt::basic_format_string<char, int &, int &>::basic_format_string<FMT_COMPILE_STRING, 0>' is not a constant expression
+  295 |         errno, FMT_STRING("cannot duplicate file descriptor {} to {}"), fd_,
+      |                ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/core.h:741:54: note: subexpression not valid in a constant expression
+  741 |     format_str_.remove_prefix(detail::to_unsigned(it - begin()));
+      |                                                   ~~~^~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2676:5: note: in call to 'this->context_.advance_to(&"cannot duplicate file descriptor {} to {}"[34])'
+ 2676 |     context_.advance_to(begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2671:5: note: in call to 'this->on_format_specs(0, &"cannot duplicate file descriptor {} to {}"[34], &"cannot duplicate file descriptor {} to {}"[34])'
+ 2671 |     on_format_specs(id, begin, begin);  // Call parse() on empty specs.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2495:5: note: in call to 'handler.on_replacement_field(0, &"cannot duplicate file descriptor {} to {}"[34])'
+ 2495 |     handler.on_replacement_field(handler.on_arg_id(), begin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2561:13: note: in call to 'parse_replacement_field<char, fmt::detail::format_string_checker<char, int, int> &>(&"cannot duplicate file descriptor {} to {}"[34], &"cannot duplicate file descriptor {} to {}"[41], checker(s))'
+ 2561 |     begin = parse_replacement_field(p, end, handler);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmt/core.h:2781:7: note: in call to 'parse_format_string<true, char, fmt::detail::format_string_checker<char, int, int>>({&"cannot duplicate file descriptor {} to {}"[0], 41}, checker(s))'
+ 2781 |       detail::parse_format_string<true>(str_, checker(s));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/app/build/_deps/lammps-src/src/fmtlib_os.cpp:295:16: note: in call to 'basic_format_string<FMT_COMPILE_STRING, 0>([] {
+    struct __attribute__((visibility("hidden")))  FMT_COMPILE_STRING : fmt::detail::compile_string {
+        using char_type [[maybe_unused]] = fmt::remove_cvref_t<decltype("cannot duplicate file descriptor {} to {}"[0])>;
+        [[maybe_unused]] constexpr operator fmt::basic_string_view<char_type>() const {
+            return fmt::detail_exported::compile_string_to_view<char_type>("cannot duplicate file descriptor {} to {}");
+        }
+    };
+    return FMT_COMPILE_STRING();
+}())'
+  294 |     FMT_THROW(system_error(
+      |     ~~~~~~~~~~~~~~~~~~~~~~~
+  295 |         errno, FMT_STRING("cannot duplicate file descriptor {} to {}"), fd_,
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  296 |         fd));
+      |         ~~~~
+/app/build/_deps/lammps-src/src/fmt/format.h:1914:23: note: expanded from macro 'FMT_STRING'
+ 1914 | #define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::detail::compile_string, )
+      |                       ^
+/app/build/_deps/lammps-src/src/fmt/format.h:1891:3: note: expanded from macro 'FMT_STRING_IMPL'
+ 1891 |   [] {                                                                        \
+      |   ^
+/app/build/_deps/lammps-src/src/fmt/format.h:127:34: note: expanded from macro 'FMT_THROW'
+  127 | #      define FMT_THROW(x) throw x
+      |                                  ^
+4 errors generated.
+[247/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/imbalance.cpp.o
+[248/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/imbalance_group.cpp.o
+[249/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/grid3d.cpp.o
+[250/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/imbalance_store.cpp.o
+[251/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/imbalance_neigh.cpp.o
+[252/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/imbalance_time.cpp.o
+[253/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/grid2d.cpp.o
+[254/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/image.cpp.o
+[255/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/imbalance_var.cpp.o
+[256/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/force.cpp.o
+[257/562] Building CXX object _deps/lammps-build/CMakeFiles/lammps.dir/__/src/group.cpp.o
+ninja: build stopped: subcommand failed.
